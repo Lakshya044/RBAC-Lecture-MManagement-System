@@ -1,0 +1,32 @@
+{
+    "version": 2,
+    "builds": [
+      {
+        "src": "frontend/package.json",
+        "use": "@vercel/react"
+      },
+      {
+        "src": "backend/index.js",
+        "use": "@vercel/node"
+      }
+    ],
+    "routes": [
+      {
+        "src": "/user/(.*)",
+        "dest": "/backend/index.js"
+      },
+      {
+        "src": "/lecture/(.*)",
+        "dest": "/backend/index.js"
+      },
+      {
+        "src": "/course/(.*)",
+        "dest": "/backend/index.js"
+      },
+      {
+        "src": "/(.*)",
+        "dest": "/frontend/$1"
+      }
+    ]
+  }
+  
