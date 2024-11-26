@@ -1,0 +1,71 @@
+/* SignIn.css */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+
+.sign-in-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Full viewport height */
+  background: url('/public/bg.avif') no-repeat center center/cover; /* Same image as Homepage */
+  color: #fff;
+}
+
+.sign-in-box {
+  background: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+  padding: 50px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 300px;
+}
+
+.sign-in-box h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #ffd700; /* Gold color */
+}
+
+.sign-in-box input {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+.sign-in-box button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 20px;
+  background-color: #ffd700; /* Gold background */
+  color: #000;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.sign-in-box button:hover {
+  background-color: #e6c200; /* Darker gold */
+}
+
+.sign-in-box p {
+  margin-top: 20px;
+  color: #fff;
+}
+
+.sign-in-box a {
+  color: #ffd700; /* Gold color for links */
+  text-decoration: none;
+}
+
+.sign-in-box a:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,135 @@
+/* Apply a background image to the entire page */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #011316;
+  /* background: url('/public/bg.avif') no-repeat center center fixed; */
+  background-size: cover;
+  font-family: 'Arial', sans-serif;
+}
+
+/* General container styling */
+.student-dashboard-container {
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 20px;
+  background: url('/public/bg.avif') no-repeat center center fixed;
+  background-size: cover;/* Solid white for contrast */
+  border-radius: 12px;
+  box-shadow: 0px 6px 12px rgba(201, 84, 84, 0.1);
+  color: white;
+}
+
+/* Heading styles */
+.student-dashboard-container h1,
+.student-dashboard-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: rgb(9, 1, 1); /* Deep teal for headings */
+}
+
+/* Course list styling */
+.course-list {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+/* Individual course item */
+.course-item {
+  background-color: #edf6f9; /* Pale mint green */
+  border: 1px solid #bdfef0; /* Light blue border */
+  border-radius: 12px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.course-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Label and course info */
+.course-label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.course-info {
+  margin-left: 15px;
+}
+
+.course-name {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #0077b6; /* Cool blue for course titles */
+}
+
+.course-description {
+  font-size: 14px;
+  color: #666;
+}
+
+/* Selected course links */
+.course-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  background-color: #caf0f8; /* Soft aqua blue */
+  border: 1px solid #51949f; /* Aqua border */
+  border-radius: 12px;
+  padding: 15px;
+  margin-bottom: 15px;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.course-link:hover {
+  background-color: #ade8f4; /* Brighter aqua on hover */
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.description,
+.lectures {
+  font-size: 20px;
+  color: black;
+}
+
+/* Submit button styling */
+.submit-button {
+  display: block;
+  margin: 30px auto;
+  padding: 10px 20px;
+  background-color: #028090; /* Deep teal for the button */
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+  background-color: #05668d; /* Darker teal on hover */
+}
+
+/* Responsive design for mobile screens */
+@media (max-width: 768px) {
+  .student-dashboard-container {
+    padding: 15px;
+  }
+
+  .course-list {
+    grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+  }
+
+  .submit-button {
+    width: 100%;
+  }
+}

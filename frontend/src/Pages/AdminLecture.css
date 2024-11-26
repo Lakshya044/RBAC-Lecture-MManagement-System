@@ -1,0 +1,85 @@
+.AdminLecture-container {
+  width: 80%;
+  margin: auto;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.Create-form,
+.update-form {
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  margin-bottom: 10px;
+  padding: 8px;
+  border: 1px solid #ccc;
+}
+
+button {
+  padding: 8px 16px;
+  margin-right: 10px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.cancel-icon {
+  position: absolute;
+  top: 190px;
+  right: 180px;
+  background-color: #dc3545;
+  color: #fff;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+ .cancel-icon:hover {
+  background-color: #c82333;
+}
+
+.lectures-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.lecture-item {
+  width: calc(33.33% - 20px); /* Adjust width as needed */
+  padding: 10px;
+  border: 1px solid #ccc;
+  text-decoration: none;
+  color: inherit;
+}
+
+.lecture-item h2 {
+  margin-top: 0;
+}
+
+.lecture-item p {
+  margin-bottom: 10px;
+}
+
+.lecture-item button {
+  margin-top: 10px;
+}

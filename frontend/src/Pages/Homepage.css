@@ -1,0 +1,53 @@
+/* Homepage.css */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+
+.homepage-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Full viewport height */
+  background: url('/public/bg.avif') no-repeat center center/cover; /* Update with your image path */
+  color: #fff;
+}
+
+.login-signup-box {
+  background: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+  padding: 50px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 300px;
+}
+
+.login-signup-box h1 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #ffd700; 
+}
+
+.login-signup-box p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+  
+}
+
+.login-signup-box a {
+  display: inline-block;
+  margin: 20px 10px; /* Increased margin between buttons */
+  padding: 10px 20px;
+  background-color: #ffd700; /* Gold background for links */
+  color: #000;
+  text-decoration: none;
+  border-radius: 10px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.login-signup-box a:hover {
+  background-color: #e6c200; /* Darker gold on hover */
+}
