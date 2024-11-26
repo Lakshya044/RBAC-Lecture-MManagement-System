@@ -19,6 +19,7 @@ const cors = require('cors');
 const corsOptions = {
   origin: ['https://rbac-lecture-m-management-system-9wwe-nine.vercel.app'], 
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
+  allowedHeaders: ['Content-Type', 'Authorization'],
 };
 
 app.use(cors(corsOptions));
