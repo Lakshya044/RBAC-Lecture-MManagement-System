@@ -13,7 +13,16 @@ const Port = process.env.port || 8080
 
 const app = express();
 app.use(express.json())
-app.use(cors())
+const cors = require('cors');
+
+
+const corsOptions = {
+  origin: ['https://rbac-lecture-m-management-system-9wwe-nine.vercel.app'], 
+  methods: ['GET', 'POST', 'PUT', 'DELETE'],
+};
+
+app.use(cors(corsOptions));
+
 
 app.get("/",(req,res)=>{
     res.status(200).send("LMS")
