@@ -13,8 +13,10 @@ const SignInPage = () => {
         headers: {
           'Content-Type': 'application/json',
         },
+       
         body: JSON.stringify({ email, password }),
       });
+      console.log("response",response);
       const data = await response.json();
       console.log("data", data);
       if (response.ok) {
