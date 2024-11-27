@@ -19,8 +19,8 @@ This is simple LMS application that allows students to select courses and view t
 
 ## Features
 
-- Admin Can Create/Update/Delete Course/Lecture
-- Students can Select 3 courses And See the Lecture
+- Admin Can Create/Update/Delete Course/Lecture and update or delete student profile
+- Students can Select  courses And See the Lecture
 
 
 ## Technologies Used
@@ -48,15 +48,11 @@ This is simple LMS application that allows students to select courses and view t
     npm install
     ```
 
-  3. Set up your MongoDB connection by creating a `.env` file in the root directory with the following content:
+  3. Set up your MongoDB connection by creating a `.env` file in the backend directory with the following content:
 
     ```env
-    MONGOURL=your-mongodb-connection-string
-
- 
-    ```
-
-  - Replace `your-mongodb-connection-string` with your MongoDB connection string .
+    MongoURL=your-mongodb-connection-string
+    
   
 
   4. Run the application:
@@ -106,7 +102,7 @@ This is simple LMS application that allows students to select courses and view t
 | POST   | `/user/logout`       | Log out a user           | Yes                      |
 | POST   | `/user/add-courses/` | Add 3 Course              | Yes                     |
 | GET    | `/user/getcourses/`  | Get all cousres Selected by user   | Yes            |
-
+| GET    | `/user/all           | Fetch all user            |  Yes
 
 
 
@@ -139,5 +135,5 @@ This is simple LMS application that allows students to select courses and view t
 
 To access the admin features of this project, please use the following credentials:
 
-- **Email:** Admin@gmail.com
-- **Password:** Asdf
+- **Email:** test@gmail.ocm
+- **Password:** 12345
