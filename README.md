@@ -135,5 +135,5 @@ This is simple LMS application that allows students to select courses and view t
 
 To access the admin features of this project, please use the following credentials:
 
-- **Email:** test@gmail.ocm
+- **Email:** testing@gmail.com
 - **Password:** 12345

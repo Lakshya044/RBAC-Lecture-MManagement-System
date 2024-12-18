@@ -13,16 +13,13 @@ const Port = process.env.port || 8080
 
 const app = express();
 app.use(express.json())
-const cors = require('cors');
 
 
-const corsOptions = {
-  origin: ['https://rbac-lecture-m-management-system-9wwe-nine.vercel.app'], 
-  methods: ['GET', 'POST', 'PUT', 'DELETE'],
-  allowedHeaders: ['Content-Type', 'Authorization'],
-};
 
-app.use(cors(corsOptions));
+
+
+app.use(cors());
+
 
 
 app.get("/",(req,res)=>{
